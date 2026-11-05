@@ -5,9 +5,9 @@ A small test of the question behind the Manchester PhD project: do geospatial fo
 It compares logistic regression and Random Forest on two feature sets, under random and spatially blocked cross-validation, and with fewer and fewer training labels.
 
 ## Status
-- `evaluate`, the label loader and the figures have been tested on synthetic data, and the loader on the real label file.
-- **`extract` has never been run against Earth Engine.** It has only been run against a stand-in, so expect to fix small problems on the first real run.
-- **There are no real results yet.** Anything from `demo` is invented data.
+- **Run on 5 November 2026**, after the preregistration was committed (see the git history). Results: [`RESULTS.md`](RESULTS.md); tables and figures in `results/`.
+- Headline: under spatially blocked validation, frozen AlphaEarth embeddings did **not** outperform seasonal Sentinel-2 features (macro-F1 difference −0.048, 95% block-bootstrap −0.123 to +0.029).
+- Anything from `demo` is invented data.
 
 ## Run it
 ```bash
@@ -26,7 +26,7 @@ python pilot.py evaluate --block-km 2  --out results/block2
 python pilot.py evaluate --block-km 10 --out results/block10
 python pilot.py evaluate --pure-only   --out results/pure
 ```
-Check Earth Engine's terms before registering. ROXR Earth is a company, so this project should stay separate from commercial use, and you should confirm which tier applies to you.
+Earth Engine needs a Google Cloud project registered for it; this pilot was run on a personal, non-commercial research project. Check which tier applies to you before running it.
 
 ## Outputs
 | File | Contents |
@@ -59,14 +59,8 @@ PlantVillage Kenya Ground Reference Crop Type Dataset, downloaded as one GeoJSON
 - Use the larger `african-crops-kenya-02` set, whose labels are rasters and so need different loading code.
 - Hold out one lead farmer's fields at a time; the first number of `Field ID` identifies the lead farmer.
 
-## For the Supporting Statement
-Only after real results exist, replace the bracket in the Statement with something like this, filling in your actual findings:
-
-> To test my readiness, I compared frozen AlphaEarth embeddings with seasonal Sentinel-2 features on 305 PlantVillage fields in western Kenya, preregistering the tests. Under spatially blocked validation, [result, with the interval]; random folds [overstated performance by X / did not]. Code: [GitHub link].
-
-If the result is inconclusive, say so. It still shows the right habits, and it is what this project needs.
-
 ## Credits and licences
-- **Labels:** PlantVillage (2019). *PlantVillage Kenya Ground Reference Crop Type Dataset*. Radiant MLHub. https://doi.org/10.34911/rdnt.u41j87. CC BY-SA 4.0: credit it, and share any redistributed adaptation of the labels under the same licence.
+- **Code:** MIT licence (see `LICENSE`).
+- **Labels** (not included in this repository; `pilot.py labels` downloads them): PlantVillage (2019). *PlantVillage Kenya Ground Reference Crop Type Dataset*. Radiant MLHub. https://doi.org/10.34911/rdnt.u41j87. CC BY-SA 4.0: credit it, and share any redistributed adaptation of the labels under the same licence.
 - **Embeddings:** The AlphaEarth Foundations Satellite Embedding dataset is produced by Google and Google DeepMind. CC-BY 4.0. Brown, C. F., Kazmierski, M. R., Pasquarella, V. J., et al. (2025). arXiv:2507.22291. Earth Engine ID: `GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL`.
 - **Imagery:** Copernicus Sentinel-2 (`COPERNICUS/S2_SR_HARMONIZED`) with Cloud Score+ (`GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED`).

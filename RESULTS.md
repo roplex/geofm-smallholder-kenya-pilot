@@ -1,6 +1,6 @@
 # Results (run 2026-11-05, after the preregistration commit 88ee008)
 
-Features extracted once on Earth Engine project `knimeproject-447409` (personal, non-commercial): 305 fields, no missing values in either feature set. Each evaluation was run once; nothing was tuned after seeing scores. Full tables in `results/` (not in git).
+Features extracted once on a personal, non-commercial Earth Engine project: 305 fields, no missing values in either feature set. Each evaluation was run once; nothing was tuned after seeing scores. Full tables and figures in `results/`.
 
 ## Main run (5 km blocks, 13 blocks, 10 repeats; macro-F1, mean)
 | Model | Random folds | Spatial blocks |

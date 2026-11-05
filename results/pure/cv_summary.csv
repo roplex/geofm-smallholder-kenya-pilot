@@ -1,0 +1,13 @@
+,,macro_f1,macro_f1,balanced_accuracy,balanced_accuracy
+,,mean,std,mean,std
+validation,model,,,,
+random,LogReg on AlphaEarth,0.32,0.014,0.345,0.023
+random,LogReg on Sentinel-2,0.412,0.02,0.437,0.026
+random,Majority class,0.145,0.0,0.2,0.0
+random,RF on AlphaEarth,0.195,0.012,0.222,0.008
+random,RF on Sentinel-2,0.304,0.012,0.31,0.01
+spatial,LogReg on AlphaEarth,0.262,0.02,0.284,0.022
+spatial,LogReg on Sentinel-2,0.379,0.018,0.398,0.025
+spatial,Majority class,0.145,0.0,0.2,0.0
+spatial,RF on AlphaEarth,0.194,0.012,0.225,0.007
+spatial,RF on Sentinel-2,0.299,0.011,0.306,0.009

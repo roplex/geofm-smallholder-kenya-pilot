@@ -1,0 +1,18 @@
+{
+  "note": "",
+  "fields": 305,
+  "crops": {
+    "Maize": 197,
+    "Cassava": 59,
+    "Fallowland": 23,
+    "Millet": 16,
+    "Groundnut": 10
+  },
+  "spatial_blocks": 19,
+  "block_km": 2.0,
+  "pure_only": false,
+  "median_field_ha": 0.137,
+  "sentinel2_missing_share": 0.0,
+  "python": "3.13.5",
+  "scikit_learn": "1.9.1"
+}

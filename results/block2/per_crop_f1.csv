@@ -1,0 +1,11 @@
+validation,model,Cassava,Fallowland,Groundnut,Maize,Millet
+random,LogReg on AlphaEarth,0.423,0.157,0.054,0.614,0.222
+random,LogReg on Sentinel-2,0.635,0.3,0.094,0.716,0.149
+random,Majority class,0.0,0.0,0.0,0.785,0.0
+random,RF on AlphaEarth,0.105,0.0,0.0,0.783,0.0
+random,RF on Sentinel-2,0.532,0.059,0.0,0.833,0.012
+spatial,LogReg on AlphaEarth,0.396,0.189,0.018,0.577,0.109
+spatial,LogReg on Sentinel-2,0.628,0.307,0.089,0.684,0.077
+spatial,Majority class,0.0,0.0,0.0,0.785,0.0
+spatial,RF on AlphaEarth,0.02,0.0,0.0,0.786,0.0
+spatial,RF on Sentinel-2,0.524,0.142,0.0,0.825,0.012
