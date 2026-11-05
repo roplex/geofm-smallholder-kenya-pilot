@@ -2,7 +2,7 @@
 
 Complete and commit this file **before** running `python pilot.py evaluate` on real data, so the git history shows the tests were fixed first. Edit anything below that you disagree with, but do it now, not after seeing results.
 
-- **Author:** Alex Kiptanui Rop
+- **Author:** Alex Rop
 - **Date fixed:** 2026-11-05
 - **Data seen so far:** field labels only (crop counts, locations). No feature values or model scores.
 
