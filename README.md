@@ -8,6 +8,7 @@ It compares logistic regression and Random Forest on two feature sets, under ran
 - **Run on 5 November 2026**, after the preregistration was committed (see the git history). Results: [`RESULTS.md`](RESULTS.md); tables and figures in `results/`.
 - Headline: under spatially blocked validation, frozen AlphaEarth embeddings did **not** outperform seasonal Sentinel-2 features (macro-F1 difference −0.048, 95% block-bootstrap −0.123 to +0.029).
 - Anything from `demo` is invented data.
+- **Exploratory, not preregistered:** a small PyTorch neural network under the same spatial blocks, in [`exploratory/`](exploratory/README.md). It did not beat logistic regression (macro-F1 0.279 on Sentinel-2, 0.201 on AlphaEarth).
 
 ## Run it
 ```bash

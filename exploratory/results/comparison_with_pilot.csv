@@ -1,0 +1,8 @@
+model,mean,std
+LogReg on Sentinel-2,0.345,0.018
+RF on Sentinel-2,0.298,0.01
+MLP on Sentinel-2,0.279,0.043
+LogReg on AlphaEarth,0.25,0.018
+MLP on AlphaEarth,0.201,0.026
+RF on AlphaEarth,0.163,0.006
+Majority class,0.157,0.0
